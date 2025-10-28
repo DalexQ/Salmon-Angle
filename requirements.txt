@@ -1,0 +1,12 @@
+# Core
+pillow>=9.5
+numpy>=1.26
+tqdm>=4.66
+
+# Notebook tooling
+jupyterlab>=4.0
+ipykernel>=6.28
+matplotlib>=3.8
+
+ultralytics
+opencv-python>=4.9
