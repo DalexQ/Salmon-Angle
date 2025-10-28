@@ -13,15 +13,18 @@ Esto está hecho para ver el funcionamiento del script, recomendamos usar la car
 
 ```
 .
-├─ crop_fish.py                # Script que recorta por bounding boxes y separa por ángulos
-├─ project-labelstudio.json    # ✅ JSON de anotaciones ya incluido (exportado desde Label Studio)
-├─ data/                       # (tú pones aquí las imágenes originales)
-│  ├─ ...                      # Subcarpetas con las imágenes
-├─ cropped_por_angulo/         # Se genera al ejecutar el script (0,45,90,135,180,225,270,315,sin_angulo)
-├─ notebooks/                  # (opcional) Tu notebook de entrenamiento
-│  └─ tu_notebook.ipynb
+├─ crop_fish.py
+├─ project-3-at-2025-10-21-17-49-288e7bbb.json   # JSON ya incluido en el repo
+├─ FishAngle_Local_Jupyter.ipynb                 # Notebook (opcional)
 ├─ requirements.txt
+├─ pyproject.toml                                # (opcional)
+├─ data/                                         # ← se llena al descargar el dataset desde Drive (ver §3.1)
+│  └─ ...                                        # imágenes originales
+├─ cropped_por_angulo/                           # se genera al ejecutar el script
+├─ notebooks/                                    # (opcional)
+│  └─ tu_notebook.ipynb
 └─ README.md
+
 ```
 
 > Si prefieres otro nombre/ubicación para el JSON, ajusta `json_path` dentro de `crop_fish.py`.
@@ -56,6 +59,7 @@ pip install -r requirements.txt
 ---
 
 ## 3) Datos incluidos (sin Label Studio)
+
 
 - El repositorio trae `project-labelstudio.json` con las anotaciones.  
 - Este JSON contiene **checkboxes de ángulo** (clases) y **bounding boxes** por imagen.  
