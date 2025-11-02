@@ -29,7 +29,7 @@ Esto está hecho para ver el funcionamiento del script, recomendamos usar la car
 ```bash
 # Clonar el repositorio
 git clone https://github.com/DalexQ/Salmon-Angle.git
-cd <TU_REPO>
+cd Salmon-Angle
 
 # (Opcional) Crear y activar un entorno virtual
 python -m venv .venv
@@ -145,7 +145,7 @@ Si tu notebook usa **YOLO11 clasificación** (p. ej. `yolo11n-cls`), confirma qu
 **Windows (PowerShell):**
 ```powershell
 git clone https://github.com/DalexQ/Salmon-Angle.git
-cd <TU_REPO>
+cd Salmon-Angle
 python -m venv .venv
 .venv\Scripts\Activate
 python -m pip install --upgrade pip
