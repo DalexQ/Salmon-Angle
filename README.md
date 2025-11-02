@@ -15,10 +15,10 @@ Esto está hecho para ver el funcionamiento del script, recomendamos usar la car
 .
 ├─ crop_fish.py
 ├─ project-3-at-2025-10-21-17-49-288e7bbb.json   # JSON ya incluido en el repo
-├─ FishAngle_Local_Jupyter.ipynb                 # Notebook (opcional)
+├─ FishAngle_Local_Jupyter.ipynb                 # Notebook 
 ├─ requirements.txt
-├─ data/                                         # ← se llena al descargar el dataset desde Drive (ver §3.1)
-│  └─ ...                                        # imágenes originales
+├─ data/                                         # dataset con imágenes originales
+│  └─ ...                                        
 ├─ cropped_por_angulo/                           # se genera al ejecutar el script
 ├─ notebooks/                                    
 │  └─ FishAngle_Local_Jupyter.ipynb
@@ -101,9 +101,9 @@ Cada recorte se nombra como: `NOMBREIMG_x0_y0_x1_y1.png`.
 
 ---
 
-## 5) Ejecutar el notebook (opcional)
+## 5) Ejecutar el notebook
 
-Si tienes tu notebook en `notebooks/tu_notebook.ipynb`, lanza Jupyter y ábrelo:
+Si tienes tu notebook en `notebooks/FishAngle_Local_Jupyter.ipynb`, lanza Jupyter y ábrelo:
 
 ```bash
 jupyter lab
