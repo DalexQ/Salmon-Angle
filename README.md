@@ -1,7 +1,7 @@
 # Fish Angle Crops & Notebook – Reproducible Setup (sin usar Label Studio)
 
 Este repositorio **ya incluye** un archivo JSON con anotaciones **exportado previamente desde Label Studio**.  
-➡️ **No necesitas instalar ni usar Label Studio** para replicar el proceso: solamente ejecutarás el script de recorte y, si quieres, el notebook de entrenamiento/clasificación.
+➡️ **No necesitas instalar ni usar Label Studio** para replicar el proceso: solamente ejecutarás el script de recorte.
 
 Esto está hecho para ver el funcionamiento del script, recomendamos usar la carpeta "fish_angles_raw" que fue enviada por interno.
 
@@ -17,33 +17,24 @@ Esto está hecho para ver el funcionamiento del script, recomendamos usar la car
 ├─ project-3-at-2025-10-21-17-49-288e7bbb.json   # JSON ya incluido en el repo
 ├─ FishAngle_Local_Jupyter.ipynb                 # Notebook (opcional)
 ├─ requirements.txt
-├─ pyproject.toml                                # (opcional)
 ├─ data/                                         # ← se llena al descargar el dataset desde Drive (ver §3.1)
 │  └─ ...                                        # imágenes originales
 ├─ cropped_por_angulo/                           # se genera al ejecutar el script
-├─ notebooks/                                    # (opcional)
-│  └─ tu_notebook.ipynb
+├─ notebooks/                                    
+│  └─ FishAngle_Local_Jupyter.ipynb
 └─ README.md
-
-```
-
-> Si prefieres otro nombre/ubicación para el JSON, ajusta `json_path` dentro de `crop_fish.py`.
-
----
 
 ## 2) Instalar dependencias
 
 ```bash
 # Clonar el repositorio
-git clone <TU_URL_DEL_REPO>.git
+git clone https://github.com/DalexQ/Salmon-Angle.git
 cd <TU_REPO>
 
 # (Opcional) Crear y activar un entorno virtual
 python -m venv .venv
 # Windows
 .venv\Scripts\activate
-# Linux/Mac
-source .venv/bin/activate
 
 # Instalar dependencias
 pip install --upgrade pip
