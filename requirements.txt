@@ -1,12 +1,27 @@
+# === Single-file requirements (GPU por defecto con CUDA 12.1) ===
+# Si necesitas otra variante:
+# - CUDA 11.8: cambia la 1ª línea por ->  https://download.pytorch.org/whl/cu118
+# - SOLO CPU:  cambia la 1ª línea por ->  https://download.pytorch.org/whl/cpu
+
+--index-url https://download.pytorch.org/whl/cu121
+--extra-index-url https://pypi.org/simple
+
+# PyTorch + CUDA
+torch
+torchvision
+torchaudio
+
 # Core
 pillow>=9.5
 numpy>=1.26
 tqdm>=4.66
+scikit-learn>=1.4
 
 # Notebook tooling
 jupyterlab>=4.0
 ipykernel>=6.28
 matplotlib>=3.8
 
+# (Opcional) Clasificación YOLO11
 ultralytics
 opencv-python>=4.9
